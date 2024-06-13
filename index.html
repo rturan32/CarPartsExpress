@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Parts Express - E-Commerce Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Car Parts Express</h1>
+        <p>Your one-stop shop for all car parts.</p>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <button id="voice-search">🔍</button>
+        <div id="filters">
+            <button onclick="applyFilter('brand')">Brand</button>
+            <button onclick="applyFilter('model')">Model</button>
+            <button onclick="applyFilter('price')">Price</button>
+            <button onclick="applyFilter('rating')">Rating</button>
+            <button onclick="applyFilter('seller')">Seller</button>
+        </div>
+    </header>
+    <main>
+        <section id="search-results">
+            <!-- Search results will be displayed here -->
+        </section>
+        <section id="user-authentication">
+            <h2>User Registration and Login</h2>
+            <form id="registration-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Register</button>
+            </form>
+            <button id="social-login">Login with Social Media</button>
+        </section>
+        <section id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+        </section>
+        <section id="payment-processing">
+            <h2>Payment Processing</h2>
+            <form id="payment-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+        <section id="order-tracking">
+            <h2>Order Tracking and History</h2>
+            <div id="order-history">
+                <!-- Order history will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
