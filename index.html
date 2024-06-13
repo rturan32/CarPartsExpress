@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Parts Express - E-Commerce Platform</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: blue; /* Main header will be blue */
+        }
+        h2 {
+            color: green; /* Second level headers will be green */
+        }
+        #filters button {
+            color: red; /* Filter buttons will be red */
+        }
+        #user-authentication h2 {
+            color: purple; /* User authentication header will be purple */
+        }
+        #shopping-cart h2 {
+            color: orange; /* Shopping cart header will be orange */
+        }
+        #payment-processing h2 {
+            color: teal; /* Payment processing header will be teal */
+        }
+        #order-tracking h2 {
+            color: brown; /* Order tracking header will be brown */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,6 +49,7 @@
         </section>
         <section id="user-authentication">
             <h2>User Registration and Login</h2>
+            <!-- This section belongs to registration.html -->
             <form id="registration-form">
                 <label for="email">Email:</label>
                 <input type="email" id="email" required>
@@ -37,12 +61,14 @@
         </section>
         <section id="shopping-cart">
             <h2>Shopping Cart</h2>
+            <!-- This section belongs to cart.html -->
             <div id="cart-items">
                 <!-- Cart items will be displayed here -->
             </div>
         </section>
         <section id="payment-processing">
             <h2>Payment Processing</h2>
+            <!-- This section belongs to payment.html -->
             <form id="payment-form">
                 <label for="card-number">Card Number:</label>
                 <input type="text" id="card-number" required>
@@ -55,6 +81,7 @@
         </section>
         <section id="order-tracking">
             <h2>Order Tracking and History</h2>
+            <!-- This section belongs to order-history.html -->
             <div id="order-history">
                 <!-- Order history will be displayed here -->
             </div>
