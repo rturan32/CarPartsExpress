@@ -5,29 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Parts Express - E-Commerce Platform</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        h1 {
-            color: blue; /* Main header will be blue */
-        }
-        h2 {
-            color: green; /* Second level headers will be green */
-        }
-        #filters button {
-            color: red; /* Filter buttons will be red */
-        }
-        #user-authentication h2 {
-            color: purple; /* User authentication header will be purple */
-        }
-        #shopping-cart h2 {
-            color: orange; /* Shopping cart header will be orange */
-        }
-        #payment-processing h2 {
-            color: teal; /* Payment processing header will be teal */
-        }
-        #order-tracking h2 {
-            color: brown; /* Order tracking header will be brown */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -57,6 +34,13 @@
                 <input type="password" id="password" required>
                 <button type="submit">Register</button>
             </form>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
             <button id="social-login">Login with Social Media</button>
         </section>
         <section id="shopping-cart">
@@ -82,6 +66,7 @@
         <section id="order-tracking">
             <h2>Order Tracking and History</h2>
             <!-- This section belongs to order-history.html -->
+            <input type="text" id="order-search-bar" placeholder="Search orders...">
             <div id="order-history">
                 <!-- Order history will be displayed here -->
             </div>

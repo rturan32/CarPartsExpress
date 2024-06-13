@@ -1,62 +1,144 @@
-/* styles.css */
+/* Genel Ayarlar */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background: url('sky-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 header p {
-    margin: 5px 0 20px;
+    margin: 0;
+    font-size: 1.2em;
 }
 
 #search-bar {
-    width: 60%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 1em;
 }
 
 #voice-search {
     padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: white;
+    border: 1px solid #ddd;
     cursor: pointer;
 }
 
 #filters {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+#filters button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
 }
 
 section {
+    background-color: white;
+    margin: 20px 0;
     padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-#cart-items, #order-history {
+section h2 {
+    margin-top: 0;
+}
+
+/* Form Stilleri */
+form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-.search-result, .cart-item, .order-item {
-    border: 1px solid #ccc;
+form label {
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
     padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
+form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Sosyal Medya Giriş Butonu */
+#social-login {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#social-login:hover {
+    background-color: #2d4373;
+}
+
+/* Sepet Öğeleri */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Sipariş Öğeleri */
+.order {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
